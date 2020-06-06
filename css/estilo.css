@@ -7,9 +7,9 @@
 }
 
 body {
-    font-size: 1em;   
+    font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: rgb(211, 208, 208);
+    background: rgba(181, 160, 240, 0.315);
 
 }
 
@@ -17,39 +17,144 @@ body {
 ***** Layout ****
 */
 #area-cabecalho {
-    background-color: #f7b600;
+    background-color: #1a0420;
     padding: 15px;
     text-align: center;
 }
 
-/* FORMATAÇÃO MENU */
-a{
-    text-decoration: none;
-    
+#area-principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+
 }
 
-a:link, a:visited {
-    color: #fff;
-    padding: 8px 12px;
+#area-postagens,
+#area-lateral {
+    background: white;
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;
+    margin-bottom: 25px;
+}
+
+#area-lateral {
+    width: 240px;
+    float: right;
+}
+
+.conteudo-lateral {
+    padding: 10px;
+}
+
+#rodape {
+    clear: both;
+    /*remove o comportamento dos elementos flutuantes*/
+    background-color: #1a0420;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    margin-top: 15px;
+}
+
+.leia-mais {
+    padding: 5px;
+    margin: 10px auto;
+
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
+}
+
+/* FORMATAÇÃO MENU */
+a {
+    text-decoration: none;
+    margin: 2px;
+}
+
+a:link,
+a:visited {
+    color: #1a0420;
 }
 
 a:hover {
-    color: #f7b600;
-    background: #fff;
+    text-decoration: underline;
 }
 
-#area-logo, #area-menu {
+#area-cabecalho a:link,
+#area-cabecalho a:visited {
+    color: rgba(192, 176, 201, 0.808);
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+    color: #e8def0a6;
+    background: rgba(87, 74, 95, 0.459);
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+.conteudo-lateral a {
+    color: #f7b600;
+
+}
+
+
+#area-logo,
+#area-menu {
     padding: 10px;
 }
 
 /*
 ***** Formatações Gerais ****
 */
-h1{
+h1 {
     color: #4e4e4e;
     font-size: 2.5em;
     font-family: 'Chelsea Market', cursive;
 }
-.branco{
+
+h2 {
+    color: #f7b600;
+}
+
+h3 {
+    color: #565656;
+    background-color: #f7b600;
+    ;
+    padding: 5px;
+}
+
+.branco {
     color: white;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 15px;
+    float: right;
+}
+
+.img {
+    margin: 10px auto;
+}
+
+.text-postagem {
+    border-bottom: 1px solid #1a0420;
+    border-right: 1px solid #1a0420;
+    border-radius: 0.3em;
 }
